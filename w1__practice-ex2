@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+ 
+int main()
+{
+	int i;
+	const char *ptrArray[4] = { { "Korea" }, { "Suwon" }, { "AjouSoftware" }, { "DataStructures" } };
+ 
+//ptrArray 변수 사용하여 ptrArray i 번째 주소값 출력
+	for (i = 0; i < 4; i++){
+		printf("%u\n", &(ptrArray[i]));//?왜 4씩 증가함..?
+	}
+	ptrArray[3] = "Human-Computer Interaction";
+	printf("\n\n");
+ 
+//ptrArray 변수 사용하여 i 번째 문자열 출력
+	for (i = 0; i < 4; i++)
+		printf("%s\n", *(ptrArray + i));
+	getchar();
+  return 0;
+};
