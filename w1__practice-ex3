@@ -1,0 +1,48 @@
+#define CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+/*
+사실상 문장 해석 능력 평가
+
+1 ptrArray 변수 사용하여 ptrArray 배열의 0번째 주소값 출력
+2 ptrArray 변수 사용하여 ptrArray 배열의 0번째가 가리키는 주소값 출력
+3 ptrArray 변수 사용하여 ptrArray 배열의 0번째가 가리키는 문자열의 0번째 캐릭터(char) K 출력
+4 ptrArray 변수 사용하여 ptrArray 배열의 0번째가 가리키는 문자열의 1번째 캐릭터(char) o 출력
+5 ptrArray 변수 사용하여 ptrArray 배열의 0번째가 가리키는 문자열 출력
+
+6 ptrArray 변수 사용하여 ptrArray 배열의 1번째 주소값 출력
+7ptrArray 변수 사용하여 ptrArray 배열의 1번째가 가리키는 주소값 출력
+8 ptrArray 변수 사용하여 ptrArray 배열의 1번째가 가리키는 문자열의 0번째 캐릭터(char) S 출력
+9 ptrArray 변수 사용하여 ptrArray 배열의 1번째가 가리키는 문자열의 1번째 캐릭터(char) u 출력
+10 ptrArray 변수 사용하여 ptrArray 배열의 1번째가 가리키는 문자열 출력 
+
+*/
+
+void main()
+{
+	char *ptrArray[2];
+	char **ptrptr;
+	int i;
+	ptrArray[0] = "Korea";
+	ptrArray[1] = "Suwon";
+	ptrptr = ptrArray;
+
+	printf("%u\n", &ptrArray[0]);
+	printf("%u\n", ptrArray[0]);
+	printf("%c\n", ptrArray[0][0]);
+	printf("%c\n", ptrArray[0][1]);
+	printf("%s\n\n", ptrArray[0]);
+
+	printf("%u\n", &ptrArray[1]);
+	printf("%u\n", ptrArray[1]);
+	printf("%c\n", ptrArray[1][0]);
+	printf("%c\n", ptrArray[1][1]);
+	printf("%s\n\n", ptrArray[1]);
+
+	printf("%u\n", &ptrptr);
+	printf("%u\n", ptrptr);
+	printf("%u\n", *ptrptr);
+	printf("%c\n", ptrptr[0][0]); 
+	printf("%c\n", ptrptr[0][1]);;
+	printf("%s\n", ptrptr[0]);
+}
