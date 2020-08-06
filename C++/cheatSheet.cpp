@@ -59,20 +59,43 @@
 /*===========================(1 ~ 4)====================================*/
 
 //다른 파일에서 코드를 가져온다. 
+// #include <iostream>
+// #include <cmath>
+
+// using namespace std;
+
+// int main(){
+//   // //basic math function
+//   // cout << pow(3,5); //function from 'cmath'
+//   // cout << sqrt(36);
+//   // cout << round(4.3); // 4, round(4.7) = 5 반올림
+//   // cout << ceil(4.1); //올림
+//   // cout << floor(4.7);//내림
+//   // cout << fmax(3,10); //큰수 반환, fmin 작은수 반환
+
+
+//   return 0;
+// }
+
+//6. Getting User Input
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
 int main(){
-  // //basic math function
-  // cout << pow(3,5); //function from 'cmath'
-  // cout << sqrt(36);
-  // cout << round(4.3); // 4, round(4.7) = 5 반올림
-  // cout << ceil(4.1); //올림
-  // cout << floor(4.7);//내림
-  // cout << fmax(3,10); //큰수 반환, fmin 작은수 반환
+  // // int age; 
+  // double age; //4.5 가능
+  // cout << "Enter your age: ";
+  // cin >> age;
 
+  // cout << "You are " << age << " years old\n";
+  string name;
+  cout << "Enter your name: ";
+  getline(cin, name); //getting entire line of user enter
+
+  cout << "Hello " << name;
+//요약! 1개를 입력 받을때는(문자 하나, 숫자) cin으로! 여러개를 한번에 받을때는(문장 같이) getline으로!!! getline(cin, stored variable)
 
   return 0;
 }
