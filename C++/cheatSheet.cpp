@@ -101,20 +101,46 @@
 // }
 
 //7. Building a Calculator
+// #include <iostream>
+// #include <cmath>
+
+// using namespace std;
+
+// int main(){
+//   double num1, num2; //같은 타입이면 ,로 이어도 됨.
+//   cout << "Enter first number: ";
+//   cin >> num1;
+ 
+//   cout << "Enter second number: ";
+//   cin >> num2;
+
+//   cout << num1 + num2;
+
+//   return 0;
+// }
+
+
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
 int main(){
-  double num1, num2; //같은 타입이면 ,로 이어도 됨.
-  cout << "Enter first number: ";
-  cin >> num1;
- 
-  cout << "Enter second number: ";
-  cin >> num2;
+  //8. Building a Mad Libs
+  string color, pluralNoun, celebrity;
+  
+  cout << "enter a color: ";
+  getline(cin, color);
+  cout << "enter a pluralNoun: ";
+  getline(cin, pluralNoun);
+  cout << "enter a celebrity: ";
+  getline(cin, celebrity);
 
-  cout << num1 + num2;
+
+  cout << "Roses are "<< color << endl;
+  cout << pluralNoun <<" are blue" << endl;
+  cout << "I love " << celebrity  << endl;
+
   
   return 0;
 }
