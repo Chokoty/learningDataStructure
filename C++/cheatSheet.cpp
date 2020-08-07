@@ -78,24 +78,43 @@
 // }
 
 //6. Getting User Input
+// #include <iostream>
+// #include <cmath>
+
+// using namespace std;
+
+// int main(){
+//   // // int age; 
+//   // double age; //4.5 가능
+//   // cout << "Enter your age: ";
+//   // cin >> age;
+
+//   // cout << "You are " << age << " years old\n";
+//   string name;
+//   cout << "Enter your name: ";
+//   getline(cin, name); //getting entire line of user enter
+
+//   cout << "Hello " << name;
+// //요약! 1개를 입력 받을때는(문자 하나, 숫자) cin으로! 여러개를 한번에 받을때는(문장 같이) getline으로!!! getline(cin, stored variable)
+
+//   return 0;
+// }
+
+//7. Building a Calculator
 #include <iostream>
 #include <cmath>
 
 using namespace std;
 
 int main(){
-  // // int age; 
-  // double age; //4.5 가능
-  // cout << "Enter your age: ";
-  // cin >> age;
+  double num1, num2; //같은 타입이면 ,로 이어도 됨.
+  cout << "Enter first number: ";
+  cin >> num1;
+ 
+  cout << "Enter second number: ";
+  cin >> num2;
 
-  // cout << "You are " << age << " years old\n";
-  string name;
-  cout << "Enter your name: ";
-  getline(cin, name); //getting entire line of user enter
-
-  cout << "Hello " << name;
-//요약! 1개를 입력 받을때는(문자 하나, 숫자) cin으로! 여러개를 한번에 받을때는(문장 같이) getline으로!!! getline(cin, stored variable)
-
+  cout << num1 + num2;
+  
   return 0;
 }
